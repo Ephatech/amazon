@@ -1,0 +1,49 @@
+.signin-logo{
+    margin-top: 90px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    height: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signin-cont{
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 50px;
+    /* width: 20%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;;
+}
+
+.signin-cont>h1{
+    text-align: center;
+}
+
+.signin-cont>form>input{
+    width: 99%;
+    height: 30px;
+}
+
+.signin{
+    background-color: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734;
+    font-weight: bold;
+}
+
+.create{
+    font-weight: bold;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: darkgray;
+}

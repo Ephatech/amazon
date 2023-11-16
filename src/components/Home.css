@@ -1,0 +1,19 @@
+.home{
+    width: 100%;
+}
+
+.home-img{
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -23%;
+    mask-image: linear-gradient(to top, transparent, rgb(241, 236, 184), rgb(255, 255, 255));
+}
+
+.my-row{
+    padding: 25px;
+}
+
+.main-cont{
+    background: #e3e6e6;
+    width: 100%;
+}

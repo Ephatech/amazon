@@ -1,0 +1,38 @@
+.my-container{
+    background-color: #ffffff;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* padding-bottom: 45%; */
+}
+
+.my-container::-webkit-scrollbar{
+    display: none;
+}
+
+.title{
+    display: flex;
+}
+.cont{
+    background-color: #ffffff;
+    /* height: 600px; */
+    /* margin: 15px; */
+    margin-bottom: 30px;
+}
+
+.exc-det{
+    margin-top: 25px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #6ba7b2;
+}
+
+.exc-det:hover{
+    color: rgb(209, 79, 35);
+}
+
+.exc{
+    margin-top: 10px;
+    margin-left: 15px;
+}

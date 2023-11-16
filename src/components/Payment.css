@@ -1,0 +1,52 @@
+.payment{
+    background-color: #d2d1d1;
+}
+
+.payment-sections-cont{
+    background-color: #fff;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-title{
+    padding-top: 70px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-bottom: 1px solid lightgray ;
+}
+
+.payment-section{
+    display: flex;
+    border-bottom: 1px solid lightgray ;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.payment-left{
+    flex:0.2;
+    padding-left: 30px;
+}
+
+
+.payment-left h3{
+    color: black;
+}
+
+.payment-right, .payment-items{
+    flex: 0.8;
+}
+
+.payment-items{
+    margin-left: -360px;
+}
+
+.btn-buynow{
+    background-color: rgb(245, 238, 28);
+    border-radius: 3px;
+    width: 20%;
+    height: 30px;
+    border-radius: 1px solid;
+    border-color: #787009;
+    color: #111;
+}
