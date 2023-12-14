@@ -17,7 +17,7 @@
 }
 
 .payment-section{
-    display: flex;
+    /* display: flex; */
     border-bottom: 1px solid lightgray ;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -44,7 +44,8 @@
 .btn-buynow{
     background-color: rgb(245, 238, 28);
     border-radius: 3px;
-    width: 20%;
+    width: 160px;
+    margin-left: 60px;
     height: 30px;
     border-radius: 1px solid;
     border-color: #787009;

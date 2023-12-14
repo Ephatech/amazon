@@ -1,7 +1,8 @@
  .checkout{
     padding-top: 60px;
-    display: flex;
+    /* display: flex; */
 }
+
 
 .checkout-img{
     width: 100%;

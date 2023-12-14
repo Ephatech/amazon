@@ -10,7 +10,7 @@ const Checkout = () => {
 
     return (
         <div>
-        <div className='checkout'>
+        <div className='checkout d-md-flex'>
 
             <div className='cont-left'>
                 <img className='checkout-img' src='https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg' alt=''/>
@@ -19,7 +19,7 @@ const Checkout = () => {
                 
             </div>
 
-            <div className='cont-right'>
+            <div className='cont-right '>
                 <SubTotal/>
             </div>
 

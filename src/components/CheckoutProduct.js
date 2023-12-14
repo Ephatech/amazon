@@ -15,7 +15,7 @@ const removeFromBasket = () => {
 }
 
     return (
-        <div className='checkout-prod'>
+        <div className='checkout-prod d-md-flex'>
             <img className='checkout-prod-img' src={img}></img>
             <div className='checkout-prod-info'>
                 <p className='checkout-prod-title'>{title}</p>

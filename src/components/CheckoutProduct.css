@@ -1,5 +1,5 @@
 .checkout-prod{
-    display: flex;
+    /* display: flex; */
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -32,4 +32,7 @@
     border-radius: 4px;
     border-color: #6e6e0b;
     color: black;
+    /* width: 100px; */
+    margin-left: 60px;
+    /* margin-right: auto; */
 }

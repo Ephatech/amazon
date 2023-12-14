@@ -109,11 +109,11 @@ const Payment = () => {
                         <p>Addis Ababa, Ethiopia</p>
                     </div>
                 </div>
-                <div className='payment-section'>
+                <div className='payment-section d-md-flex'>
                     <div className='payment-left'>
                         <h3>Recieve items <br/>and delivery</h3>
                     </div>
-                    <div className='payment-items'>
+                    <div>
                             {
                                 basket?.map((item)=>(
                                     <CheckoutProduct

@@ -16,19 +16,9 @@
   }
 
 .logo-img{
-    margin-left: 15px;
+    margin-left: 5px;
     margin-top: 8px;
     width: 110px;
-}
-
-.deliver{
-    display: flex;
-    margin-left: 10px;
-    margin-right: 5px;
-}
-
-.location-icon{
-    margin-top: 20px;
 }
 
 .search{
@@ -69,7 +59,7 @@
 }
 
 .cart{
-    padding-right: 30px;
+    padding-right: 5px;
 }
 
 .cart-icon{

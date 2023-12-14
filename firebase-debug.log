@@ -1,0 +1,110 @@
+[debug] [2023-11-17T07:57:52.507Z] ----------------------------------------------------------------------
+[debug] [2023-11-17T07:57:52.513Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --except functions
+[debug] [2023-11-17T07:57:52.514Z] CLI Version:   12.8.1
+[debug] [2023-11-17T07:57:52.515Z] Platform:      win32
+[debug] [2023-11-17T07:57:52.515Z] Node Version:  v18.17.0
+[debug] [2023-11-17T07:57:52.805Z] Time:          Thu Nov 16 2023 23:57:52 GMT-0800 (Pacific Standard Time)
+[debug] [2023-11-17T07:57:52.806Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-17T07:57:53.098Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-17T07:57:53.099Z] > authorizing via signed-in user (ephunashamed@gmail.com)
+[debug] [2023-11-17T07:57:53.099Z] [iam] checking project fir-6ed13 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-17T07:57:53.103Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-6ed13:testIamPermissions [none]
+[debug] [2023-11-17T07:57:53.103Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-6ed13:testIamPermissions x-goog-quota-user=projects/fir-6ed13
+[debug] [2023-11-17T07:57:53.103Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-6ed13:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-17T07:57:56.285Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-6ed13:testIamPermissions 200
+[debug] [2023-11-17T07:57:56.286Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-6ed13:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-17T07:57:56.287Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-6ed13 [none]
+[debug] [2023-11-17T07:57:57.161Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-6ed13 200
+[debug] [2023-11-17T07:57:57.162Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-6ed13 {"projectId":"fir-6ed13","projectNumber":"673855460795","displayName":"amazon","name":"projects/fir-6ed13","resources":{"hostingSite":"fir-6ed13"},"state":"ACTIVE","etag":"1_705c3bfd-e210-4431-a206-f67721e60d67"}
+[info] 
+[info] === Deploying to 'fir-6ed13'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-11-17T07:57:57.175Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/versions [none]
+[debug] [2023-11-17T07:57:57.175Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-11-17T07:57:59.713Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/versions 200
+[debug] [2023-11-17T07:57:59.713Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/versions {"name":"projects/673855460795/sites/fir-6ed13/versions/1a20911d76cfb99e","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[fir-6ed13]: beginning deploy... 
+[info] i  hosting[fir-6ed13]: found 12 files in build 
+[debug] [2023-11-17T07:58:18.297Z] [hosting] uploading with 200 concurrency
+[debug] [2023-11-17T07:58:19.826Z] [hosting] hash cache [YnVpbGQ] stored for 12 files
+[debug] [2023-11-17T07:58:19.826Z] [hosting][hash queue][FINAL] {"max":1418,"min":3,"avg":159.33333333333334,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":1465}
+[debug] [2023-11-17T07:58:19.829Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/673855460795/sites/fir-6ed13/versions/1a20911d76cfb99e:populateFiles [none]
+[debug] [2023-11-17T07:58:19.829Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/673855460795/sites/fir-6ed13/versions/1a20911d76cfb99e:populateFiles {"files":{"/amazon-icon-41517.png":"228820bdfbce2e86d38e39ba2494105c72ad59bafaa84962805be886549edc74","/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/index.html":"426094eb22878d9563545bf3fdac98e7e8f5db5d3ca2bd37b2116d32ecb66aee","/asset-manifest.json":"1e6d5c83055053f230d45428dc7c4a31642637a4c2888f2f7f665b87bc0f054b","/static/css/main.3d286c8e.css":"dde3ba22315b7176a59a44b24f7aceefcd3797406c2537ec933e5ff089fb9526","/static/js/main.0744da66.js.LICENSE.txt":"a6910ec79067c44dae93769885f3f0cf4fd4c05deed1f0c7b19d994611e9a27b","/static/css/main.3d286c8e.css.map":"f62071939d54169dd71bfc3fc06e78b4fe4cd665294d87531f39af66b18213fc","/static/js/main.0744da66.js":"870807ab2d8fd9b2cd00e9345a1a46a84f7e9a31555990565fc5a605b6401551","/static/js/main.0744da66.js.map":"92d1da24a39fa73f29dd1c2d7c5167afc13948b6b8da1a95206677fbd8cfc1bd"}}
+[debug] [2023-11-17T07:58:21.692Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/673855460795/sites/fir-6ed13/versions/1a20911d76cfb99e:populateFiles 200
+[debug] [2023-11-17T07:58:21.693Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/673855460795/sites/fir-6ed13/versions/1a20911d76cfb99e:populateFiles {"uploadRequiredHashes":["dde3ba22315b7176a59a44b24f7aceefcd3797406c2537ec933e5ff089fb9526","426094eb22878d9563545bf3fdac98e7e8f5db5d3ca2bd37b2116d32ecb66aee","f62071939d54169dd71bfc3fc06e78b4fe4cd665294d87531f39af66b18213fc","92d1da24a39fa73f29dd1c2d7c5167afc13948b6b8da1a95206677fbd8cfc1bd","870807ab2d8fd9b2cd00e9345a1a46a84f7e9a31555990565fc5a605b6401551","1e6d5c83055053f230d45428dc7c4a31642637a4c2888f2f7f665b87bc0f054b"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files"}
+[debug] [2023-11-17T07:58:21.696Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/dde3ba22315b7176a59a44b24f7aceefcd3797406c2537ec933e5ff089fb9526 [none]
+[debug] [2023-11-17T07:58:21.697Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/dde3ba22315b7176a59a44b24f7aceefcd3797406c2537ec933e5ff089fb9526 [stream]
+[debug] [2023-11-17T07:58:21.699Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/426094eb22878d9563545bf3fdac98e7e8f5db5d3ca2bd37b2116d32ecb66aee [none]
+[debug] [2023-11-17T07:58:21.699Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/426094eb22878d9563545bf3fdac98e7e8f5db5d3ca2bd37b2116d32ecb66aee [stream]
+[debug] [2023-11-17T07:58:21.700Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/f62071939d54169dd71bfc3fc06e78b4fe4cd665294d87531f39af66b18213fc [none]
+[debug] [2023-11-17T07:58:21.700Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/f62071939d54169dd71bfc3fc06e78b4fe4cd665294d87531f39af66b18213fc [stream]
+[debug] [2023-11-17T07:58:21.702Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/92d1da24a39fa73f29dd1c2d7c5167afc13948b6b8da1a95206677fbd8cfc1bd [none]
+[debug] [2023-11-17T07:58:21.702Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/92d1da24a39fa73f29dd1c2d7c5167afc13948b6b8da1a95206677fbd8cfc1bd [stream]
+[debug] [2023-11-17T07:58:21.703Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/870807ab2d8fd9b2cd00e9345a1a46a84f7e9a31555990565fc5a605b6401551 [none]
+[debug] [2023-11-17T07:58:21.703Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/870807ab2d8fd9b2cd00e9345a1a46a84f7e9a31555990565fc5a605b6401551 [stream]
+[debug] [2023-11-17T07:58:21.706Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/1e6d5c83055053f230d45428dc7c4a31642637a4c2888f2f7f665b87bc0f054b [none]
+[debug] [2023-11-17T07:58:21.706Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/1e6d5c83055053f230d45428dc7c4a31642637a4c2888f2f7f665b87bc0f054b [stream]
+[debug] [2023-11-17T07:58:21.708Z] [hosting][populate queue][FINAL] {"max":1912,"min":1912,"avg":1912,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1924}
+[debug] [2023-11-17T07:58:21.709Z] [hosting] uploads queued: 6
+[debug] [2023-11-17T07:58:23.835Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/dde3ba22315b7176a59a44b24f7aceefcd3797406c2537ec933e5ff089fb9526 200
+[debug] [2023-11-17T07:58:23.835Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/dde3ba22315b7176a59a44b24f7aceefcd3797406c2537ec933e5ff089fb9526 [stream]
+[debug] [2023-11-17T07:58:24.064Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/426094eb22878d9563545bf3fdac98e7e8f5db5d3ca2bd37b2116d32ecb66aee 200
+[debug] [2023-11-17T07:58:24.065Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/426094eb22878d9563545bf3fdac98e7e8f5db5d3ca2bd37b2116d32ecb66aee [stream]
+[debug] [2023-11-17T07:58:24.605Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/1e6d5c83055053f230d45428dc7c4a31642637a4c2888f2f7f665b87bc0f054b 200
+[debug] [2023-11-17T07:58:24.605Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/1e6d5c83055053f230d45428dc7c4a31642637a4c2888f2f7f665b87bc0f054b [stream]
+[debug] [2023-11-17T07:58:24.881Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/f62071939d54169dd71bfc3fc06e78b4fe4cd665294d87531f39af66b18213fc 200
+[debug] [2023-11-17T07:58:24.881Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/f62071939d54169dd71bfc3fc06e78b4fe4cd665294d87531f39af66b18213fc [stream]
+[debug] [2023-11-17T07:58:26.316Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/870807ab2d8fd9b2cd00e9345a1a46a84f7e9a31555990565fc5a605b6401551 200
+[debug] [2023-11-17T07:58:26.316Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/870807ab2d8fd9b2cd00e9345a1a46a84f7e9a31555990565fc5a605b6401551 [stream]
+[debug] [2023-11-17T07:58:38.655Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/92d1da24a39fa73f29dd1c2d7c5167afc13948b6b8da1a95206677fbd8cfc1bd 200
+[debug] [2023-11-17T07:58:38.655Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-6ed13/versions/1a20911d76cfb99e/files/92d1da24a39fa73f29dd1c2d7c5167afc13948b6b8da1a95206677fbd8cfc1bd [stream]
+[debug] [2023-11-17T07:58:38.655Z] [hosting][upload queue][FINAL] {"max":16959,"min":2143,"avg":5364.5,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":16962}
+[info] +  hosting[fir-6ed13]: file upload complete 
+[debug] [2023-11-17T07:58:38.659Z] [hosting] deploy completed after 20381ms
+[debug] [2023-11-17T07:58:38.660Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "fir-6ed13"
+    },
+    "version": "projects/673855460795/sites/fir-6ed13/versions/1a20911d76cfb99e"
+  }
+]
+[info] i  hosting[fir-6ed13]: finalizing version... 
+[debug] [2023-11-17T07:58:38.664Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/versions/1a20911d76cfb99e updateMask=status%2Cconfig
+[debug] [2023-11-17T07:58:38.665Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/versions/1a20911d76cfb99e {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2023-11-17T07:58:40.442Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/versions/1a20911d76cfb99e 200
+[debug] [2023-11-17T07:58:40.442Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/versions/1a20911d76cfb99e {"name":"projects/673855460795/sites/fir-6ed13/versions/1a20911d76cfb99e","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-11-17T07:57:59.007402Z","createUser":{"email":"ephunashamed@gmail.com"},"finalizeTime":"2023-11-17T07:58:40.354985Z","finalizeUser":{"email":"ephunashamed@gmail.com"}}
+[debug] [2023-11-17T07:58:40.442Z] [hosting] finalized version for fir-6ed13:[object Object]
+[info] +  hosting[fir-6ed13]: version finalized 
+[info] i  hosting[fir-6ed13]: releasing new version... 
+[debug] [2023-11-17T07:58:40.444Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/channels/live/releases versionName=projects%2F673855460795%2Fsites%2Ffir-6ed13%2Fversions%2F1a20911d76cfb99e
+[debug] [2023-11-17T07:58:40.444Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/channels/live/releases {}
+[debug] [2023-11-17T07:58:42.297Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/channels/live/releases 200
+[debug] [2023-11-17T07:58:42.297Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-6ed13/channels/live/releases {"name":"projects/673855460795/sites/fir-6ed13/channels/live/releases/1700207921562000","version":{"name":"projects/673855460795/sites/fir-6ed13/versions/1a20911d76cfb99e","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-11-17T07:57:59.007402Z","createUser":{"email":"ephunashamed@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLbcn8E_WeahEPvpEAOKVcrbfUyUYLH08H2eAtxZJGr=mo"},"finalizeTime":"2023-11-17T07:58:40.354985Z","finalizeUser":{"email":"ephunashamed@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLbcn8E_WeahEPvpEAOKVcrbfUyUYLH08H2eAtxZJGr=mo"}},"type":"DEPLOY","releaseTime":"2023-11-17T07:58:41.562Z","releaseUser":{"email":"ephunashamed@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLbcn8E_WeahEPvpEAOKVcrbfUyUYLH08H2eAtxZJGr=mo"}}
+[debug] [2023-11-17T07:58:42.297Z] [hosting] release: {"name":"projects/673855460795/sites/fir-6ed13/channels/live/releases/1700207921562000","version":{"name":"projects/673855460795/sites/fir-6ed13/versions/1a20911d76cfb99e","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-11-17T07:57:59.007402Z","createUser":{"email":"ephunashamed@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLbcn8E_WeahEPvpEAOKVcrbfUyUYLH08H2eAtxZJGr=mo"},"finalizeTime":"2023-11-17T07:58:40.354985Z","finalizeUser":{"email":"ephunashamed@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLbcn8E_WeahEPvpEAOKVcrbfUyUYLH08H2eAtxZJGr=mo"}},"type":"DEPLOY","releaseTime":"2023-11-17T07:58:41.562Z","releaseUser":{"email":"ephunashamed@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLbcn8E_WeahEPvpEAOKVcrbfUyUYLH08H2eAtxZJGr=mo"}}
+[info] +  hosting[fir-6ed13]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/fir-6ed13/overview
+[info] Hosting URL: https://fir-6ed13.web.app
+[debug] [2023-11-17T07:59:13.359Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
